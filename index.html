@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Block Blast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="menu" class="screen">
+  <h1>🧩 Block Blast</h1>
+  <button onclick="showLevels()">Jogar</button>
+</div>
+
+<div id="levels" class="screen hidden">
+  <h2>Selecione o Nível</h2>
+  <div id="levelList"></div>
+  <button onclick="backMenu()">Voltar</button>
+</div>
+
+<div id="game" class="screen hidden">
+  <h2 id="levelTitle"></h2>
+  <div id="board"></div>
+  <button onclick="backMenu()">Sair</button>
+</div>
+
+<script src="levels.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
